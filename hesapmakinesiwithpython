@@ -1,0 +1,28 @@
+print("""         Berk'in hesap makinesine hoşgeldiniz.
+         Lütfen hangi işlemi yapmak istediğinizi belirtiniz.
+         Toplama işlemi yapmak için 1
+         Çıkarma işlemi yapmak için 2
+         Çarpma işlemi yapmak için 3
+         Bölme işlemi yapmak için 4""")
+
+def Toplama(sayi1,sayi2):
+    return (sayi1+sayi2)
+def Çıkarma(sayi1,sayi2):
+    return (sayi1-sayi2)
+def Çarpma(sayi1,sayi2):
+    return (sayi1*sayi2)
+def Bölme(sayi1,sayi2):
+    return (sayi1/sayi2)
+
+
+islem = int(input("         Yapmak istediğiniz işlemi rakamla giriniz : "))
+sayi1 = int(input("Seçtiğiniz işlemde kullanmak istediğiniz 1. sayıyı giriniz : "))
+sayi2 = int(input("Seçtiğiniz işlemde kullanmak istediğiniz 2. sayıyı giriniz :"))
+if islem ==1:
+    print("Toplama işleminin sonucu : ",Toplama(sayi1,sayi2))
+elif islem==2:
+    print("Çıkarma işleminin sonucu : ",Çıkarma(sayi1,sayi2))
+elif islem==3:
+    print("Çarpma işleminin sonucu : ",Çarpma(sayi1,sayi2))
+elif islem==4:
+    print("Bölme işleminin sonucu : ",Bölme(sayi1,sayi2))
